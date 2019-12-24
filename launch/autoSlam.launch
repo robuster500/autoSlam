@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<launch>
+  <!-- Conect the robot -->
+ <param name="autoSerial" value="/dev/ttyUSB7" />
+ <node name="main" pkg="robusterAotoSlam" type="main.py" output="screen"/>
+ <!--node name="rosserial_python" pkg="rosserial_python" type="serial_node.py" output="screen"/-->
+
+  <!-- load robot model -->
+  <!--include file="$(find robuster_mr)/launch/mr500_bringup.launch"/-->
+
+</launch>
+
+
+
+
